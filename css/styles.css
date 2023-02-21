@@ -22,6 +22,10 @@
     --General-Sans: "GeneralSans-Variable", "Inter", Helvetica, Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--General-Sans);
     background-color: var(--colour-bg);
@@ -60,6 +64,11 @@ h3 {
     font-weight: 500;
     color: var(--colour-light);
     width: 50vw;
+}
+
+p {
+    color: var(--colour-light);
+    line-height: 1.1;
 }
 
 a {
@@ -141,6 +150,11 @@ header .wordmark:hover {
 }
 
 .header-nav a:hover {
+    color: var(--colour-accent);
+    text-decoration-color: var(--colour-accent);
+}
+
+a.active {
     color: var(--colour-accent);
     text-decoration-color: var(--colour-accent);
 }
@@ -294,6 +308,49 @@ button.disabled {
     transform: rotate(360deg);
 }
 
+/* ABOUT */
+
+.hero.about {
+    height: fit-content;
+}
+
+.hero .about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: min-content;
+    height: 45vw;
+    padding-top: 1.6rem;
+    gap: 1.6rem;
+
+}
+
+.about p {
+    margin-right: 2.5rem;
+    font-size: 1.6rem;
+}
+
+.about p:nth-child(3) {
+    grid-row: 2 / 11;
+}
+
+.about img {
+    object-fit: cover;
+    min-width: 45vw;
+    height: 45vw;
+    grid-column: 2 / 3;
+    grid-row: 1 / 11;
+}
+
+.hero.about .lettermark {
+    left: 0;
+}
+
+.hero.about .lnr-smile {
+    bottom: unset;
+}
+
 /* FOOTER */
 
 footer {
@@ -304,11 +361,6 @@ footer {
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-template-areas: 
-    "a b"
-    "c c"; */
 }
 
 footer > h1 {
@@ -336,7 +388,6 @@ footer > h1 .lnr:hover {
 }
 
 footer ul {
-    /* height: max-content; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -362,40 +413,13 @@ footer img {
     margin-bottom: 0;
 }
 
+/* WORK (PAGE)*/
 
-/* h1 {
-    font-size: 12rem;
-    font-weight: 800;
-    color: var(--colour-lightgrey);
+.title {
+    margin-top: 1.6rem;
+    margin-bottom: 2.5rem;
 }
 
-h3 {
-    font-size: 2rem;
-    font-weight: 300;
-    color: var(--colour-lightgrey);
+.title h1 {
+    color: var(--colour-secondary);
 }
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.hero a {
-    text-decoration: none;
-    text-align: center;
-}
-
-.hero a:hover {
-    transform: scale(1.05);
-}
-
-.hero > * {
-    transition: all ease 0.5s;
-}
-
-.hero a:hover > * {
-    color: var(--colour-light);
-} */

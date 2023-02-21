@@ -8,6 +8,11 @@ function goHome(){
 }
 
 // UI/UX
+function goWork(){
+    location.href='/html/work.html'; 
+}
+
+// UI/UX
 function goUIUX(){
     location.href='/html/uiux.html'; 
 }
@@ -35,6 +40,26 @@ function goSony(){
 // Neon and Cyberpunk
 function goNeon(){
     location.href='/html/neon-and-cyberpunk.html'; 
+}
+// Inspirock
+function goInsp(){
+    location.href='/html/inspirock.html';
+}
+// Mario World
+function goMario(){
+    location.href='/html/mario-world.html';
+}
+// Frame vs. Field
+function goFVF(){
+    location.href='/html/frame-vs-field.html';
+}
+// Slchld Vinyl
+function goSlchld(){
+    location.href='/html/slchld-vinyl.html';
+}
+// Outfit Colour Index
+function goOutfit(){
+    location.href='/html/outfit-coulour-index.html';
 }
   
 // Get all filter buttons
