@@ -12,11 +12,70 @@
     <title>raphtsang</title>
 </head>
 <body>
+    <header>
+        <img class="wordmark" onclick="goHome()" src="res/svg/raphtsang-Wordmark.svg" alt="Raphtsang's Logo (wordmark)">
+        <ul class="header-nav">
+            <li><a href="#">work</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </header>    
     <div class="hero">
-        <a href="https://raphtsang.wixsite.com/portfolio">
-            <h1>RAPHAEL TSANG</h1>
-            <h3>click here for portfolio, new site coming soon :)</h3>
-        </a>
+            <h1><br><em class="pink">Hi.</em><br><br>I'm <a href="/html/about.html">Raphael Tsang</a>,<br> a <em class="purple">UI/UX</em> Designer!</h1>
+            <img class="lettermark" src="res/svg/raphtsang-Lettermark.svg" alt="Raphtsang's Logo (lettermark)">
+            <a href="#" class="lnr lnr-smile"></a>
     </div>
+    <div class="main-work">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="recent">Recent</button>
+            <button class="filter-btn" data-filter="uiux">UI/UX</button>
+            <button class="filter-btn" data-filter="graphic">Graphic</button>
+        </div>
+        <div class="work-cont">
+            <div class="filter-cont uiux" onclick="goFG()">
+                <div class="imgbtn">
+                    <img src="res/img/20230221-raphtsang-furniture-galore-mockup-inverted-web-res.jpg" alt="Mockups of Furniture Galore website, Inverted">
+                    <button class="disabled" onclick="goUIUX()">UI/UX</button>
+                </div>
+                <h2>Furniture Galore<em> - 2022</em></h2>
+                <h3>Analysis, redesign, and implementation of a bad website.</h3>
+            </div>
+            <div class="filter-cont uiux" onclick="goTBA()">
+                <div class="imgbtn">
+                    <img src="res/img/20230221-raphtsang-the-banking-app-mockup-web-res.jpg" alt="Mockups of The Banking App">
+                    <button class="disabled" onclick="goUIUX()">UI/UX</button>
+                </div>
+                <h2>The Banking App<em> - 2021</em></h2>
+                <h3>Concept banking application designed for international students and parents.</h3>
+            </div>
+            <div class="filter-cont graphic" onclick="goSony()">
+                <div class="imgbtn">
+                    <img src="res/img/20230221-raphtsang-sony-brand-refresh-mockup-web-res.jpg" alt="Mockup of Rebranded Sony Walkman and Headphones">
+                    <button class="disabled" onclick="goGraphic()">Graphic</button>
+                </div>
+                <h2>Sony Brand Refresh<em> - 2022</em></h2>
+                <h3>A retro yet refreshed conceptual rebrand of one of the 20th century's most innovative brands.</h3>
+            </div>
+            <div class="filter-cont graphic" onclick="goNeon()">
+                <div class="imgbtn">
+                    <img src="res/img/20221028-raphtsang-neon-cyberpunk-web-res.jpg" alt="126x126 Voxel Room inspired by Cyberpunk" class="cyberpunk">
+                    <button class="disabled" onclick="goGraphic()">Graphic</button>
+                </div>
+                <h2>Neon + Cyberpunk<em> - 2022</em></h2>
+                <h3>Cyberpunk 2077-inspired experimentation with neon lights, on a 126x126 voxel room scale.</h3>
+            </div>
+            <h3>All Work <a href="#" class="lnr lnr-arrow-right-circle"></a></h3> 
+        </div>
+    </div>
+    <footer>
+        <h1>Think I'd be fun to work with?<br><br><em>Get in touch!<a href="#" class="lnr lnr-arrow-right-circle"></a></em></h1>
+        <ul class="contact-list">
+            <li><a href="mailto:raphaeltsang88@gmail.com"><h3>Email</h3></a></li>
+            <li><a href="https://www.linkedin.com/in/raphaeltsang/"><h3>Linkedin</h3></a></li>
+            <li><a href="https://instagram.com/raphtsang"><h3>Instagram</h3></a></li>
+          </ul>
+        <img src="res/svg/raphtsang-Lettermark.svg" alt="Raphtsang's Logo (lettermark) in footer">          
+    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
